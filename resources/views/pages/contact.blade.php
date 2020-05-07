@@ -4,10 +4,29 @@
 @section('content')
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-4 col-lg-12">
-				
+			<div style="padding-top: 80px;">
+				<p style="text-align: center; font-size: 24px;">Contact</p>
 			</div>
-			<div class="col-md-6 col-sm-4 col-lg-12">
+		</div>
+		<div class="row" style="padding-top: 80px;">
+			<div class="col-md-6">
+				<div>
+					<div>
+						<p>Entrez en contact!</p>
+					</div>
+					<br>
+					<div>
+						<p>ADRESSE</p>
+						<p>Bedi, à 50 m de la pharmacie Santa Rosa, Douala</p>
+					</div>
+					<div>
+						<p>CONTACTEZ-NOUS</p>
+						<p>Tél : (+237) 698 00 77 51 | 679 61 15 86 | 655 72 32 67</p>
+						<p>E-mail : {{ config('mpropre.admin_support_mail') }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
 				<div id="#">
 					<form method="POST" action="#">
 						 {{ csrf_field() }}
